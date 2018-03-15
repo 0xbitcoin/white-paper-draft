@@ -2,7 +2,7 @@
 
 #### ( Whitepaper Draft v2 )
 
-#### 0xBitcoin: The Decentralized Bitcoin-Like Ethereum Token 
+#### 0xBitcoin: The Decentralized Bitcoin Token for Ethereum 
 -------------------------------
 
 ### Abstract 
