@@ -15,7 +15,7 @@ The Ethereum Network has proven itself as the world’s first ecosystem for perm
 One of the most effective side effects of Satoshi Nakamoto's desire to secure the original Bitcoin network with Proof of Work hash mining was tethering and bootstrapping the coin to computing power, thereby removing centralized actor jurisdiction. Transitioning the responsibility of work back onto individual miners, government organizations would have no jurisdiction, and indeed visibility, of mined 0xBitcoin. Government oversight is removed from an equation whereby miners are providing economic effort in direct exchange of a cryptographic commodity.  This facilitates relatively decentralized distribution and establishes all involved parties as stakeholders.  0xBitcoin is a first in class token that allows projects to be funded not by centralized, direct-fiat conversion, but through decentralized computing power.
 
 ### Name Origin of 0xBitcoin
-The name is 0xBitcoin is derived from a combination of the name of the decentralized and mined commodity Bitcoin with the term ‘0x’ which implies that the asset lives on the Ethereum Network.  This is implied because all Ethereum addresses begin with the characters ‘0x.’  The 0xBitcoin contract is located at Ethereum address 0xb6ed7644c69416d67b522e20bc294a9a9b405b31 and has validated transparent code which can be audited on the Etherscan service.  
+The name is 0xBitcoin is derived from a combination of the name of the decentralized and mined commodity Bitcoin with the term ‘0x’ which implies that the asset lives on the Ethereum Network.  This is implied because all Ethereum addresses begin with the characters ‘0x.’  The 0xBitcoin contract is located at Ethereum address [0xb6ed7644c69416d67b522e20bc294a9a9b405b31](https://etherscan.io/address/0xb6ed7644c69416d67b522e20bc294a9a9b405b31) and has validated transparent code which can be audited on the Etherscan service.  
 
 ### Ethereum and ICOs	
 The Ethereum blockchain in its current state exists as a thriving permissionless ecosystem which allows any individual to store immutable records in a permissionless, invulnerable and transparent manner.  There is no other database system in the world that has this ability except for Ethereum and other similar blockchains.  As blockchain applications become richer and more numerous, there is a need for alternative distribution models than the ICO. Indeed, there have been proposals to mitigate some  initial investment risks through the recent introduction of the DAICO model (Cunningham, 2018) that rely on timed and automated value transfers via the DIACO smart contract tapping mechanism. However, this does not align a token smart contract as a non-security and still has the potential to put investors at risk if not implemented carefully. Allowing users of the network direct access to tokens by performing computations as a proof of work supplies allows any smart contract to distribute a token in a safe, slow, and controlled manner similar to the release of a new commodity.
@@ -160,12 +160,12 @@ but interfaces and other contracts MUST NOT expect these values to be present.
 ## Minting New 0xBitcoins
 
 The 0xBitcoin Token was deployed to the Ethereum blockchain in February, 2018, with the following attributes:
-•	No pre-mine
-•	No ICO
-•	21,000,000 tokens total supply
-•	Difficulty target auto-adjusts with PoW hashrate
-•	Rewards decrease as more tokens are minted
-•	ERC20 compatibility
+* No pre-mine
+* No ICO
+* 21,000,000 tokens total supply
+* Difficulty target auto-adjusts with PoW hashrate
+* Rewards decrease as more tokens are minted
+* ERC20 compatibility
 
 As such, the only way for a user to acquire 0xBitcoins is to mine them or purchase them from miners on decentralized exchanges. The mint function is responsible for verifying the validity of the hash solution, updating the contracts internal state and issuing new 0xBitcoins.
 
@@ -201,7 +201,7 @@ function mint(uint256 nonce, bytes32 challenge_digest) public returns (bool succ
     return true;
 }
 ```
-figure 1. 0xBitcoin Smart Contract mint() function
+*figure 1. 0xBitcoin Smart Contract mint() function*
 
 The mining reward is initially gathered and follows the same algorithm as Bitcoin classic. Essentially following the paradigm of a fully decentralized monetary system, whereby the tokens are created by the nodes of a peer to peer network. The 0xbitcoin algorithm defines how the token will be created and at what rate.
 
