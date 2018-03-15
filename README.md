@@ -169,6 +169,7 @@ The 0xBitcoin Token was deployed to the Ethereum blockchain in February, 2018, w
 
 As such, the only way for a user to acquire 0xBitcoins is to mine them or purchase them from miners on decentralized exchanges. The mint function is responsible for verifying the validity of the hash solution, updating the contracts internal state and issuing new 0xBitcoins.
 
+``` js
 function mint(uint256 nonce, bytes32 challenge_digest) public returns (bool success) {   
     uint reward_amount = getMiningReward();
 
@@ -199,7 +200,7 @@ function mint(uint256 nonce, bytes32 challenge_digest) public returns (bool succ
 
     return true;
 }
-
+```
 figure 1. 0xBitcoin Smart Contract mint() function
 
 The mining reward is initially gathered and follows the same algorithm as Bitcoin classic. Essentially following the paradigm of a fully decentralized monetary system, whereby the tokens are created by the nodes of a peer to peer network. The 0xbitcoin algorithm defines how the token will be created and at what rate.
