@@ -2,8 +2,7 @@
 
 #### ( Whitepaper Draft v2 )
 
-#### 0xBitcoin: A Decentralized ERC20 Token for Fast and Secure Digital Payments
-
+#### 0xBitcoin: The Decentralized Bitcoin-Like Ethereum Token 
 -------------------------------
 
 ### Abstract 
