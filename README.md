@@ -45,6 +45,21 @@ As an ERC20 token, 0xBitcoin uses a traditional Ethereum account. These accounts
 
 ## Mining
 
+There have been mintable or mined tokens proposed for Ethereum in the past but none of them have ever successfully implemented Proof of Work or automated difficulty adjustment and so never became pure decentralized currencies.  0xBitcoin is mined using a simple Keccak256 (Sha3) algorithm using the following methodology:
+
+
+``` js
+   keccak256(nonce, minerEthAddress, challengeNumber) < difficultyTarget
+```
+
+The nonce is a random number selected by the mining software.  The mining software mines to try to find a valid nonce.  If the above statement evalutates to true, then the nonce is a valid solution to the proof of work.   The challengeNumber is just a recent Ethereum block hash.  Every round, the challengeNumber updates to the most recent Ethereum block hash so future works cannot be mined in the past.  The miner's Ethereum Address is part of the hashed solution so that when a nonce solution is found, it is only valid for that particular miner and man in the middle attacks cannot occur.  This also enables pool mining.  The difficulty target becomes smaller and smaller automatically as more hashpower is added to the network.
+
+## Pool Mining 
+
+When mining 0xBitcoin, whenever a miner submits a solution, the miner must pay a small gas fee in order to execute the Ethereum smart contract code for the mint() function.    
+
+## Smart Contract
+
 Typically, ERC20 tokens will grant all tokens to the owner or will have an ICO which demands that amounts of Ether be sent to the owner for an initial offering of tokens.  Instead of granting tokens to the 'contract owner', all 0xBitcoin tokens are locked within the smart contract initially. These tokens are dispensed, 50 at a time, by calling the function 'mint' and using Proof of Work, similar to mining bitcoin classic. The 0xBitcoin smart contract is the first token to adhere to the ERC541 Draft Specification. As such the following Smart Contract methods are explicitly supported:
 
 ## Token
