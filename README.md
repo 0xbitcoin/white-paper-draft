@@ -240,7 +240,7 @@ To calculate approximate hashrate or approximate time to find a solution, the fo
 
 ### Risks and Challenges 
 
-* 0xBitcoin is implemented as an Ethereum ERC20 token and so its success is largely dependent on the success of the Ethereum Network.  If Ethereum cannot scale using methods such as Plasma, Casper, and the Loom network, then 0xBitcoin will not be able to realize its full potential as the fastest and most effective decentralized currency in the world.   
+0xBitcoin is implemented as an Ethereum ERC20 token and so its success is largely dependent on the success of the Ethereum Network.  If Ethereum cannot scale using methods such as Plasma, Casper, and the Loom network, then 0xBitcoin will not be able to realize its full potential as the fastest and most effective decentralized currency in the world.   
   
 ### Frequently Asked Questions
 
@@ -261,6 +261,9 @@ It increases up to 100% or down 50% with fractional changes in between in an eff
 
 Will there be a reward halvening event and when?
 At 10.5m tokens mined and when half the remaining has been mined then half of that remaining then half of that remaining, up to 40 iterations.
+
+Since 0xBitcoin is Proof of Work doesn't that mean it is bad for the environment?
+As long as cryptocurrencies exists, mining will always exist.  Even though mining expends energy, it ultimately reduces corruption in society by providing humanity with decentralized and transparent transactional ledgers.  Therefore the idea similar to humanity having to pay for a gigantic decentralized accounting system or police network which is reducing the widespread financial corruption across the globe.  Just as we pay police officers and accountants for their service, we pay blockchain for its service in the form of energy and computation.
 
 ### Whitepaper Contributors
 1. Infernal_toast (contract deployer)
