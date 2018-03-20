@@ -61,8 +61,7 @@ Typically, a pool will accept 'partial solutions' from miners which means the mi
 Typically, ERC20 tokens will grant all tokens to the owner or will have an ICO which demands that amounts of Ether be sent to the owner for an initial offering of tokens.  Instead of granting tokens to the 'contract owner', all 0xBitcoin tokens are locked within the smart contract initially. These tokens are dispensed, 50 at a time, by calling the function 'mint' and using Proof of Work, similar to mining bitcoin classic. The 0xBitcoin smart contract is the first token to adhere to the ERC541 Draft Specification. As such the following Smart Contract methods are explicitly supported:
 
 ## Token
-### ERC-20 compatibility Methods
-
+### ERC-20 Interface
 #### name
 
 Returns the name of the token - e.g. `"0xBitcoin Token"`.
